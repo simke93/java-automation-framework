@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9424e2fe-3c8a-40bc-85d4-9e9479725576" name="Changes" comment="init commit" />
+    <list default="true" id="9424e2fe-3c8a-40bc-85d4-9e9479725576" name="Changes" comment="Update gitignore">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,6 +14,7 @@
   </component>
   <component name="ChangesViewManager">
     <option name="groupingKeys">
+      <option value="directory" />
       <option value="module" />
     </option>
   </component>
@@ -21,6 +24,11 @@
     </projectState>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="feature/no-ref/gitignore" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="2wLUjiGCOvfP5oanpOeDEQ8lKSU" />
@@ -59,11 +67,26 @@
       <option name="project" value="LOCAL" />
       <updated>1745821321830</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="init commit">
+      <created>1745821534489</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1745821534489</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Update gitignore">
+      <created>1745822630900</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1745822630900</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="init commit" />
+    <MESSAGE value="Update gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update gitignore" />
   </component>
 </project>
