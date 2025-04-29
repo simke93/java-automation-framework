@@ -14,6 +14,7 @@ dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter'
     testImplementation 'io.rest-assured:rest-assured:5.5.1'
     implementation 'com.fasterxml.jackson.core:jackson-databind:2.19.0'
+    implementation 'org.seleniumhq.selenium:selenium-java:4.31.0'
 
     compileOnly("org.projectlombok:lombok:1.18.38")
     annotationProcessor("org.projectlombok:lombok:1.18.38")
