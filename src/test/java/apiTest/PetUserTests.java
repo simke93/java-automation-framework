@@ -41,6 +41,7 @@ public class PetUserTests {
         Assertions.assertEquals(200, response.statusCode());
     }
 
+
     @Test
     void createUserImprovedTest() {
         User user = new User(0, "string", "string", "string", "string",
