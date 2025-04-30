@@ -1,6 +1,7 @@
 package pages;
 
 import configs.TestConfig;
+import io.qameta.allure.Step;
 import lombok.Getter;
 import org.aeonbits.owner.ConfigFactory;
 import org.openqa.selenium.WebDriver;
@@ -32,6 +33,8 @@ public class LoginPage  extends BasePage {
         driver.get(BASE_URL + "login-form.html");
     }
 
+
+    @Step("Login")
     public void login(){
         usernameInput.sendKeys(VALID_USER);
         passwordInput.sendKeys(VALID_PASSWORD);
