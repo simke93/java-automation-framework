@@ -1,6 +1,8 @@
 package pages;
 
+import configs.TestConfig;
 import lombok.Getter;
+import org.aeonbits.owner.ConfigFactory;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -17,8 +19,13 @@ public class LoginPage  extends BasePage {
     @FindBy(id="success")
     private WebElement successAlert;
 
-    private static final String VALID_USER = "user";
-    private static final String VALID_PASSWORD = "user";
+    static TestConfig configProperties = ConfigFactory.create(TestConfig.class,
+            System.getProperties());
+
+    private static final String VALID_USER = configProperties.getLogin();
+    private static final String VALID_PASSWORD = configProperties.getPassword();
+    //private static final String VALID_USER = "user";
+    //private static final String VALID_PASSWORD = "user";
 
     public LoginPage(WebDriver driver) {
         super(driver);
