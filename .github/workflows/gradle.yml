@@ -35,6 +35,9 @@ jobs:
       run: chmod +x gradlew
 
     - name: Build with Gradle Wrapper
+      env:
+        SELENIUM_REMOTE_URL: "http:localhost:4444/wd/hub"
+
       run: ./gradlew test -Denv=test
     - name: Copy History
       uses: actions/checkout@v2
