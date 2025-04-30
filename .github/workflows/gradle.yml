@@ -18,6 +18,20 @@ jobs:
       contents: write
       pages: write
 
+    services:
+      selenium:
+        image: selenium/standalone-chrome:latest
+        ports:
+          - 4444:4444
+        options: >-
+          --health-cmd="curl -s http://localhost:4444/wd/hub/status | grep -q '\"ready\":true'"
+          --health-interval=10s
+          --health-timeout=5s
+          --health-retries=3
+
+      env:
+        SELENIUM_REMOTE_URL: http://localhost:4444/wd/hub
+
     steps:
     - uses: actions/checkout@v4
     - name: Set up JDK 17
@@ -35,8 +49,6 @@ jobs:
       run: chmod +x gradlew
 
     - name: Build with Gradle Wrapper
-      env:
-        SELENIUM_REMOTE_URL=http://localhost:4444/wd/hub
 
       run: ./gradlew test -Denv=test
     - name: Copy History
