@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9424e2fe-3c8a-40bc-85d4-9e9479725576" name="Changes" comment="add selenium remote">
+    <list default="true" id="9424e2fe-3c8a-40bc-85d4-9e9479725576" name="Changes" comment="update api test and selenium">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/apiTest/PetUserTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/apiTest/PetUserTests.java" afterDir="false" />
     </list>
@@ -70,7 +70,7 @@
       <command value="gradle test -Denv test" />
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.SimpleUiTests.loginTest">
+  <component name="RunManager" selected="Gradle.PetUserTests.checkUserResponseBodyImprovedTest">
     <configuration name="PetUserTests.checkUserResponseBodyImprovedTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -144,8 +144,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.SimpleUiTests.loginTest" />
         <item itemvalue="Gradle.PetUserTests.checkUserResponseBodyImprovedTest" />
+        <item itemvalue="Gradle.SimpleUiTests.loginTest" />
         <item itemvalue="Gradle.java-automation-framework [test test]" />
       </list>
     </recent_temporary>
@@ -257,7 +257,14 @@
       <option name="project" value="LOCAL" />
       <updated>1746093376104</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="update api test and selenium">
+      <created>1746094621684</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1746094621684</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -265,6 +272,7 @@
     <MESSAGE value="Update gitignore" />
     <MESSAGE value="Allure added" />
     <MESSAGE value="add selenium remote" />
-    <option name="LAST_COMMIT_MESSAGE" value="add selenium remote" />
+    <MESSAGE value="update api test and selenium" />
+    <option name="LAST_COMMIT_MESSAGE" value="update api test and selenium" />
   </component>
 </project>

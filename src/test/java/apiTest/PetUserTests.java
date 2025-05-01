@@ -141,8 +141,9 @@ public class PetUserTests {
         Assertions.assertEquals(200, createdUser.getCode());
         Assertions.assertEquals("unknown", createdUser.getType());
         Assertions.assertNotNull(createdUser.getMessage());
-        Assertions.assertTrue(Long.parseLong(createdUser.getMessage()) > 0,
-                "Expected a positive user ID, but got: " + createdUser.getMessage());
+        long userId = Long.parseLong(createdUser.getMessage());
+        System.out.println("DEBUG: userId returned = " + userId);
+        Assertions.assertTrue(userId > 0, "Expected user ID > 0, but got: " + userId);
     }
 
 }
