@@ -22,7 +22,10 @@ public class BaseTest {
     @BeforeEach
     void setup(){
         driver = initDriver();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
+        if (driver == null) {
+            throw new IllegalStateException("WebDriver not initialized. Check initDriver() logic.");
+        }
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(4));
         driver.manage().window().maximize();
     }
 
