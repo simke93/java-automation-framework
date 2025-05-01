@@ -4,10 +4,14 @@ import configs.TestConfig;
 import io.qameta.allure.Step;
 import lombok.Getter;
 import org.aeonbits.owner.ConfigFactory;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.time.Duration;
 
 public class LoginPage  extends BasePage {
     @FindBy(id = "username")
@@ -16,8 +20,8 @@ public class LoginPage  extends BasePage {
     private WebElement passwordInput;
     @FindBy(xpath = "//button[@type='submit']")
     private WebElement loginButton;
-    @Getter
-    @FindBy(id="success")
+
+    @FindBy(id = "success-alert")
     private WebElement successAlert;
 
     static TestConfig configProperties = ConfigFactory.create(TestConfig.class,
@@ -35,11 +39,17 @@ public class LoginPage  extends BasePage {
 
 
     @Step("Login")
-    public void login(){
+    public void login() {
         usernameInput.sendKeys(VALID_USER);
         passwordInput.sendKeys(VALID_PASSWORD);
         loginButton.click();
     }
 
+    public WebElement getSuccessAlert() {
+        return new WebDriverWait(driver, Duration.ofSeconds(10))
+                .until(ExpectedConditions.visibilityOfElementLocated(By.id("success-alert")));
+
+
+    }
 
 }
