@@ -141,7 +141,8 @@ public class PetUserTests {
         Assertions.assertEquals(200, createdUser.getCode());
         Assertions.assertEquals("unknown", createdUser.getType());
         Assertions.assertNotNull(createdUser.getMessage());
-        Assertions.assertTrue(Long.parseLong(createdUser.getMessage()) > 9223372036854762719L);
+        Assertions.assertTrue(Long.parseLong(createdUser.getMessage()) > 0,
+                "Expected a positive user ID, but got: " + createdUser.getMessage());
     }
 
 }

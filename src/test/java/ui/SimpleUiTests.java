@@ -47,8 +47,9 @@ public class SimpleUiTests extends BaseTest {
 
         loginPage.login();
 
-        Assertions.assertEquals("Login successful", loginPage.getSuccessAlert().getText());
-
+        //Assertions.assertEquals("Login successful", loginPage.getSuccessAlert().getText());
+        WebElement alert = loginPage.getSuccessAlert();  // Already uses WebDriverWait
+        Assertions.assertEquals("Login successful", alert.getText());
     }
 
 
