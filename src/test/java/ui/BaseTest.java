@@ -35,7 +35,9 @@ public class BaseTest {
     }
 
     private WebDriver initDriver() {
+
         String remoteUrl = System.getenv("SELENIUM_REMOTE_URL");
+        System.out.println(" DEBUG: SELENIUM_REMOTE_URL = " + remoteUrl);
         if (remoteUrl != null) {
             ChromeOptions options = new ChromeOptions();
             options.addArguments("--headless");  // Add headless mode

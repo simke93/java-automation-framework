@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9424e2fe-3c8a-40bc-85d4-9e9479725576" name="Changes" comment="update api test and selenium" />
+    <list default="true" id="9424e2fe-3c8a-40bc-85d4-9e9479725576" name="Changes" comment="update api test and selenium">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ui/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ui/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ui/SimpleUiTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ui/SimpleUiTests.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -67,7 +71,7 @@
       <command value="gradle test -Denv test" />
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.PetUserTests.checkUserResponseBodyImprovedTest">
+  <component name="RunManager" selected="Gradle.SimpleUiTests.loginTest">
     <configuration name="PetUserTests.checkUserResponseBodyImprovedTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -141,8 +145,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.PetUserTests.checkUserResponseBodyImprovedTest" />
         <item itemvalue="Gradle.SimpleUiTests.loginTest" />
+        <item itemvalue="Gradle.PetUserTests.checkUserResponseBodyImprovedTest" />
         <item itemvalue="Gradle.java-automation-framework [test test]" />
       </list>
     </recent_temporary>
@@ -268,7 +272,14 @@
       <option name="project" value="LOCAL" />
       <updated>1746095157715</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="update api test and selenium">
+      <created>1746095673643</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1746095673643</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

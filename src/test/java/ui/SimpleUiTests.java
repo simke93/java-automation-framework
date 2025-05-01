@@ -42,6 +42,7 @@ public class SimpleUiTests extends BaseTest {
 
     @Test
     void loginTest() {
+        System.out.println("loginTest() started — driver = " + driver);
         HomePage homePage = new HomePage(driver);
         LoginPage loginPage = homePage.openLoginPage();
 
