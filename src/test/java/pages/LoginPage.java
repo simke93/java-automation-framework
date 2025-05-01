@@ -47,7 +47,7 @@ public class LoginPage  extends BasePage {
 
     public WebElement getSuccessAlert() {
         return new WebDriverWait(driver, Duration.ofSeconds(10))
-                .until(ExpectedConditions.visibilityOfElementLocated(By.id("success-alert")));
+                .until(ExpectedConditions.visibilityOfElementLocated(By.id("success")));
 
 
     }
